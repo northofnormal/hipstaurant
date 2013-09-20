@@ -1,0 +1,15 @@
+<h2>Add your new restaurant</h2>
+<div class="new_form">
+<%= form_for :restaurant do |r|  %>	
+	<p><%= r.label :name %>: <%= r.text_field :name %></p>
+	<p><%= r.label :address %>: <%= r.text_field :address %></p>
+	<p><%= r.label :street %>: <%= r.text_field :street %></p>
+	<p><%= r.label :city %>: <%= r.text_field :city %></p>
+	<p><%= r.label :year_opened %>: <%= r.text_field :year_opened %></p>
+	<p><strong>Hours</strong><br>
+		<%= r.label :open %>: <%= r.text_field :open %></p>
+		<p><%= r.label :close %>: <%= r.text_field :close %></p>
+
+		<p><%= r.submit %></p>
+
+<% end %>

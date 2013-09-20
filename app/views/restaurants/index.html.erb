@@ -1,0 +1,9 @@
+<h2>A list of all restaurants</h2>
+<% @restaurants.each do |restaurant| %>
+	<div class="restaurant_list">
+		<p><strong><%= restaurant.name %></p><br>
+		<%= restaurant.address %> <%= restaurant.street %>, <%= restaurant.city %><br>
+		Hours: <%= restaurant.open %> - <%= restaurant.close %>
+		<hr>
+	</div>
+<% end %>
